@@ -220,7 +220,7 @@ static int __f2fs_set_acl(struct inode *inode, int type,
 >>>>>>> 8a98b49... posix_acl: Clear SGID bit when setting file permissions
 			if (error)
 				return error;
-			set_acl_inode(fi, inode->i_mode);
+			set_acl_inode(inode, inode->i_mode);
 		}
 		break;
 
